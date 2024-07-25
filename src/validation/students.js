@@ -22,9 +22,7 @@ const dataToValidate = {
   avgMark: 10.2,
 };
 
-const validationResult = createStudentSchema.validate(userData, {
-  abortEarly: false,
-});
+const validationResult = createStudentSchema.validate(dataToValidate);
 if (validationResult.error) {
   console.error(validationResult.error.message);
 } else {
