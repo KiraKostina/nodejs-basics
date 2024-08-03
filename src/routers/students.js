@@ -31,7 +31,7 @@ router.get(
 
 // router.post('/students', ctrlWrapper(createStudentController));
 router.post(
-  '/register',
+  '/',
   checkRoles(ROLES.TEACHER),
   validateBody(createStudentSchema),
   ctrlWrapper(createStudentController),

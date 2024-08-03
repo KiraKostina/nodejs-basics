@@ -15,20 +15,20 @@ export const createStudentSchema = Joi.object({
   parentId: Joi.string().required(),
 });
 
-const dataToValidate = {
-  name: 'John Doe',
-  email: 'john.doe@example.com',
-  age: 12,
-  gender: 'male',
-  avgMark: 10.2,
-};
+// const dataToValidate = {
+//   name: 'John Doe',
+//   email: 'john.doe@example.com',
+//   age: 12,
+//   gender: 'male',
+//   avgMark: 10.2,
+// };
 
-const validationResult = createStudentSchema.validate(dataToValidate);
-if (validationResult.error) {
-  console.error(validationResult.error.message);
-} else {
-  console.log('Data is valid!');
-}
+// const validationResult = createStudentSchema.validate(dataToValidate);
+// if (validationResult.error) {
+//   console.error(validationResult.error.message);
+// } else {
+//   console.log('Data is valid!');
+// }
 
 export const updateStudentSchema = Joi.object({
   name: Joi.string().min(3).max(30),

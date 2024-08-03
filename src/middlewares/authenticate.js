@@ -44,3 +44,8 @@ export const authenticate = async (req, res, next) => {
 
   next();
 };
+
+// {
+//          "email": "kira1@mail.com",
+//    "password": "123456"
+// }
